@@ -6,10 +6,10 @@ import tShirtPic from "../UI/Images/shopping pic.jpg"
 
 
 
-const LandingPage = () => {
+const LandingPage = (props) => {
     return (
         <div>
-                <p style={{padding: '1em'}}>
+                <p style={{padding: '1em', textAlign:'center'}}>
                     Welcome! My name is Keaton Hacking. I'm an illustration artist.
                     I specialize in digital media.
                 </p>
@@ -18,26 +18,40 @@ const LandingPage = () => {
                 <img src={Selfie} alt=""/>
                 <div style={{margin: '1em'}}>
                     <p>about me blah blah blah</p>
-                    <button className={styles['landing-page-card-button']}>About Me</button>
+                    <button onClick={()=> props.handlePageChange('About Me')}
+                            className={styles['landing-page-card-button']}>
+                        <section
+                        className={'gradient-yellow-pink'}>
+                            About Me</section>
+                    </button>
                 </div>
             </div>
 
-            <div className={styles['landing-page-card']}>
 
+            <div className={styles['landing-page-card']}>
                 <div >
                     <p>about me blah blah blah</p>
-                    <button className={styles['landing-page-card-button']}>About Me</button>
-
+                    <button onClick={()=> props.handlePageChange('Portfolio')}
+                        className={styles['landing-page-card-button']}>
+                        <section
+                            className={'gradient-pink-dark-blue'}>
+                            Portfolio</section>
+                    </button>
                 </div>
                 <img style={{margin: '1em'}} src={PortfolioPic} alt="" />
             </div>
 
+
+
             <div className={styles['landing-page-card']}>
                 <img src={tShirtPic} alt=""/>
-
                 <div style={{margin: '1em'}}>
                     <p>about me blah blah blah</p>
-                    <button className={styles['landing-page-card-button']}>About Me</button>
+                    <button onClick={()=> props.handlePageChange('Shopping')}
+                        className={`${styles['landing-page-card-button']}`}>
+                        <section className={'gradient-green-light-blue'}>
+                            Shopping</section>
+                    </button>
 
                 </div>
             </div>

@@ -2,16 +2,26 @@ import React from 'react';
 import styles from "./Nav.module.css"
 import Logo from "../UI/Images/Logo.png"
 
-const Nav = () => {
+const Nav = (props) => {
     return(
         <div className={`${styles['nav-container']} bg-light`}>
-            <img className={styles['logo']} src={Logo} alt=""/>
+            <img onClick={()=> props.handlePageChange('Home')} className={styles['logo']} src={Logo} alt=""/>
 
         <ul className={'flex fs-400 letter-spacing-2'}>
 
-            <li className={styles['nav-item']}><a href="">About Me</a></li>
-            <li className={styles['nav-item']}><a href="">Portfolio</a></li>
-            <li className={styles['nav-item']}><a href="">Shop</a></li>
+            <li onClick={()=>props.handlePageChange('About Me')}
+                className={`${styles['nav-item']} gradient-yellow-pink`}>
+                About Me</li>
+
+            <li onClick={()=>props.handlePageChange('Portfolio')}
+                className={`${styles['nav-item']} gradient-pink-dark-blue`}>
+                Portfolio</li>
+
+            <li onClick={()=>props.handlePageChange('Shopping')}
+                className={`${styles['nav-item']} gradient-green-light-blue`}>
+            Shopping
+            </li>
+
 
 
         </ul>

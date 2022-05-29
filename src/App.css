@@ -214,4 +214,20 @@ a{
     line-height: 1.1;
 }
 
+.gradient-yellow-pink{
+    background-image: linear-gradient(90deg, hsl(var(--clr-yellow)), hsl(var(--clr-orange)));
+    background-clip: text;
+    color: transparent;
+}
+.gradient-pink-dark-blue{
+    background-image: linear-gradient(90deg, hsl(var(--clr-pink)), hsl(var(--clr-dark-blue)));
+    background-clip: text;
+    color: transparent;
+}
+.gradient-green-light-blue{
+    background-image: linear-gradient(90deg, hsl(var(--clr-green)), hsl(var(--clr-light-blue)));
+    background-clip: text;
+    color: transparent;
+}
+
 
