@@ -3,18 +3,21 @@
     justify-content: center;
     align-items: center;
     padding: 1em;
+
 }
 .landing-page-card>img{
     max-width: 350px;
     height: auto;
     border-radius: 10% 10%;
     background-color: white;
+    z-index: 2;
 }
 .landing-page-card-button{
     border-radius: 30px;
     box-shadow: 0 3px 2px hsl(var(--clr-dark),.2);
     border: none;
     background-color: white;
+    z-index: 2;
 }
 .landing-page-card-button>section{
     font-weight: 600;
@@ -22,4 +25,61 @@
 
 .landing-page-card-button:hover{
     cursor: pointer;
+}
+
+.button-container{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+    z-index: 2;
+}
+
+.button-letter{
+    position: absolute;
+    z-index: 2;
+}
+
+
+
+.landing-page-blob-1{
+    position: absolute;
+    top: 400px;
+    left: 5vw;
+    background-image: linear-gradient(90deg, hsl(var(--clr-pink)), hsl(var(--clr-dark-blue)));
+    height: 700px;
+    width: 740px;
+    border-radius: 33% 67% 31% 69% / 81% 29% 71% 19% ;
+    z-index: 1;
+}
+.landing-page-blob-2{
+    position: absolute;
+    top: 1100px;
+    right: 2vw;
+    background-image: linear-gradient(90deg, hsl(var(--clr-yellow)), hsl(var(--clr-orange)));
+    height: 50vh;
+    width: 75vw;
+    border-radius: 33% 67% 16% 84% / 42% 48% 52% 58%  ;
+    z-index: 1;
+}
+
+.landing-page-blob-3{
+    position: absolute;
+    top: 600px;
+    left: 40%;
+    background-color: hsl(var(--clr-yellow), .8);
+    height: 958px;
+    width: 737px;
+    border-radius: 33% 67% 16% 84% / 42% 48% 52% 58%  ;
+    z-index: 0;
+}
+.landing-page-blob-4{
+    position: absolute;
+    top: -50px;
+    right: 10vw;
+    background-image: linear-gradient(90deg, hsl(var(--clr-green)), hsl(var(--clr-light-blue)));
+    height: 958px;
+    width: 737px;
+    border-radius: 69% 31% 30% 70% / 78% 27% 73% 22%   ;
+    z-index: 0;
 }

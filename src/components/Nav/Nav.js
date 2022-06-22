@@ -4,7 +4,7 @@ import Logo from "../UI/Images/Logo.png"
 
 const Nav = (props) => {
     return(
-        <div className={`${styles['nav-container']} bg-light`}>
+        <div className={`${styles['nav-container']}`}>
             <img onClick={()=> props.handlePageChange('Home')} className={styles['logo']} src={Logo} alt=""/>
 
         <ul className={'flex fs-400 letter-spacing-2'}>

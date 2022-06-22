@@ -1,23 +1,28 @@
 .nav-container{
+    position: relative;
     min-height:60px;
     width: 100%;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+    background-color: hsl(var(--clr-light), .6);
 }
 
 .logo{
     max-height: 100px;
     width: auto;
     margin: 10px;
+    z-index: 2;
 }
 
 .nav-item{
     padding: .5rem;
     color: transparent;
     font-weight: 700;
-    
+    z-index: 2;
 }
+
 .nav-item:hover,
 .logo:hover{
     cursor: pointer;
