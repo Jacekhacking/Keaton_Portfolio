@@ -9,7 +9,6 @@ import AboutButton from "./AboutButton";
 const LandingPage = (props) => {
     return (
         <div>
-
             {/*header*/}
             <div style={{position: 'relative', zIndex: '3'}}>
                 <p style={{padding: '1em', textAlign: 'center', zIndex: '3'}}>
@@ -69,18 +68,17 @@ const LandingPage = (props) => {
 
 
 
+            {/*----------------------------------------------------------------------------------------*/}
+            {/*                       landing page blog elements position absolute                     */}
+            {/*----------------------------------------------------------------------------------------*/}
 
-            {/*                       landing page blog elements position absolute                           */}
             <div className={styles['landing-page-blob-1']}></div>
             <div className={styles['landing-page-blob-2']}></div>
             <div className={styles['landing-page-blob-3']}></div>
             <div className={styles['landing-page-blob-4']}></div>
             <div className={styles['landing-page-blob-5']}></div>
             <div className={styles['landing-page-blob-6']}></div>
-
-
         </div>
     )
 }
-
 export default LandingPage;

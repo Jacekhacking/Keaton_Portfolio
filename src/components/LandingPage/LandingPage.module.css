@@ -56,12 +56,14 @@
 .landing-page-blob-1{
     position: absolute;
     top: 400px;
-    left: 5vw;
+    right: -5vw;
     background-image: linear-gradient(90deg, hsl(var(--clr-pink)), hsl(var(--clr-dark-blue)));
     height: 700px;
     width: 740px;
     border-radius: 25% 75% 27% 73% / 39% 43% 57% 61%  ;
     z-index: 1;
+    overflow: hidden;
+
 }
 .landing-page-blob-2{
     position: absolute;
@@ -72,17 +74,21 @@
     width: 1000px;
     border-radius: 33% 67% 16% 84% / 42% 48% 52% 58%  ;
     z-index: 1;
+    overflow: hidden;
+
 }
 
 .landing-page-blob-3{
     position: absolute;
     top: 600px;
-    left: 40%;
+    right: 10vw;
     background-color: hsl(var(--clr-yellow), .8);
     height: 958px;
     width: 737px;
     border-radius: 33% 67% 16% 84% / 42% 48% 52% 58%  ;
     z-index: 0;
+    overflow: hidden;
+
 }
 .landing-page-blob-4{
     position: absolute;
@@ -93,16 +99,19 @@
     width: 737px;
     border-radius: 69% 31% 30% 70% / 78% 27% 73% 22%   ;
     z-index: 0;
+    overflow: hidden;
+
 }
 .landing-page-blob-5{
     position: absolute;
     top: 1200px;
-    left: 15vw;
+    right: 45vw;
     background-color:  hsl(var(--clr-light-blue),.8);
     height: 758px;
     width: 737px;
     border-radius:34% 66% 41% 59% / 69% 14% 86% 31%    ;
     z-index: 0;
+    overflow: hidden;
 
 }
 .landing-page-blob-6{
@@ -114,5 +123,6 @@
     width: 337px;
     border-radius:34% 66% 41% 59% / 69% 14% 86% 31%    ;
     z-index: 0;
+    overflow: hidden;
 
 }

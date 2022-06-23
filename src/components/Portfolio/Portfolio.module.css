@@ -1,6 +1,8 @@
 .port-pic{
     border: 3px solid black;
     border-radius: 6px;
+    width: 500px;
+   height: auto;
 }
 
 
