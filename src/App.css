@@ -228,6 +228,7 @@ a{
     background-image: linear-gradient(90deg, hsl(var(--clr-green)), hsl(var(--clr-light-blue)));
     background-clip: text;
     color: transparent;
+
 }
 
 

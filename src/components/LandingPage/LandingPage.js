@@ -68,6 +68,8 @@ const LandingPage = (props) => {
             <div className={styles['landing-page-blob-2']}></div>
             <div className={styles['landing-page-blob-3']}></div>
             <div className={styles['landing-page-blob-4']}></div>
+            <div className={styles['landing-page-blob-5']}></div>
+            <div className={styles['landing-page-blob-6']}></div>
 
 
         </div>

@@ -40,7 +40,7 @@
     z-index: 2;
 }
 
-
+/*   landing page bobs z index important bgs and positions and radius variable on all of them  */
 
 .landing-page-blob-1{
     position: absolute;
@@ -49,7 +49,7 @@
     background-image: linear-gradient(90deg, hsl(var(--clr-pink)), hsl(var(--clr-dark-blue)));
     height: 700px;
     width: 740px;
-    border-radius: 33% 67% 31% 69% / 81% 29% 71% 19% ;
+    border-radius: 25% 75% 27% 73% / 39% 43% 57% 61%  ;
     z-index: 1;
 }
 .landing-page-blob-2{
@@ -57,8 +57,8 @@
     top: 1100px;
     right: 2vw;
     background-image: linear-gradient(90deg, hsl(var(--clr-yellow)), hsl(var(--clr-orange)));
-    height: 50vh;
-    width: 75vw;
+    height: 500px;
+    width: 1000px;
     border-radius: 33% 67% 16% 84% / 42% 48% 52% 58%  ;
     z-index: 1;
 }
@@ -82,4 +82,26 @@
     width: 737px;
     border-radius: 69% 31% 30% 70% / 78% 27% 73% 22%   ;
     z-index: 0;
+}
+.landing-page-blob-5{
+    position: absolute;
+    top: 1200px;
+    left: 15vw;
+    background-color:  hsl(var(--clr-light-blue),.8);
+    height: 758px;
+    width: 737px;
+    border-radius:34% 66% 41% 59% / 69% 14% 86% 31%    ;
+    z-index: 0;
+
+}
+.landing-page-blob-6{
+    position: absolute;
+    top: -20px;
+    left: 20vw;
+    background-color:  hsl(var(--clr-pink),.9);
+    height: 308px;
+    width: 337px;
+    border-radius:34% 66% 41% 59% / 69% 14% 86% 31%    ;
+    z-index: 0;
+
 }
