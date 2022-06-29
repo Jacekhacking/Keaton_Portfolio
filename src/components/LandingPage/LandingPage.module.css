@@ -56,7 +56,7 @@
 .landing-page-blob-1{
     position: absolute;
     top: 400px;
-    right: -5vw;
+    right:1vw;
     background-image: linear-gradient(90deg, hsl(var(--clr-pink)), hsl(var(--clr-dark-blue)));
     height: 700px;
     width: 740px;
@@ -68,7 +68,7 @@
 .landing-page-blob-2{
     position: absolute;
     top: 1100px;
-    right: 2vw;
+    right: 3vw;
     background-image: linear-gradient(90deg, hsl(var(--clr-yellow)), hsl(var(--clr-orange)));
     height: 500px;
     width: 1000px;
@@ -81,7 +81,7 @@
 .landing-page-blob-3{
     position: absolute;
     top: 600px;
-    right: 10vw;
+    right: 40vw;
     background-color: hsl(var(--clr-yellow), .8);
     height: 958px;
     width: 737px;
