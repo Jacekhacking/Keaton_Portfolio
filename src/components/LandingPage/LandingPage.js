@@ -52,7 +52,7 @@ const LandingPage = (props) => {
             <div className={styles['landing-page-card']}>
                 <img src={tShirtPic} alt=""/>
                 <div style={{margin: '1em', zIndex: '2'}}>
-                    <p className={styles['landing-page-paragraph']}>Shop prints, stickers, clothing and more!
+                    <p className={styles['landing-page-paragraph']}>Shop prints, stickers, clothing inquire about custom pieces!
                     </p>
                     <button
                         onClick={() => props.handlePageChange('Shopping')}
