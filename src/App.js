@@ -1,31 +1,9 @@
 import "./App.css";
 import Nav from "./components/Nav/Nav.js";
-import LandingPage from "./components/LandingPage/LandingPage";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Shopping from "./components/Shopping/Shopping";
-import { useState } from "react";
 import { Outlet, ReactLocation, Router } from "@tanstack/react-location";
 
 function App() {
-  const [page, handlePageChange] = useState();
   const location = new ReactLocation();
-
-  // const renderPage = () => {
-  //   switch (page) {
-  //     case "About Me":
-  //       return <AboutMe />;
-
-  //     case "Portfolio":
-  //       return <Portfolio />;
-
-  //     case "Shopping":
-  //       return <Shopping />;
-
-  //     default:
-  //       return <LandingPage page={page} handlePageChange={handlePageChange} />;
-  //   }
-  // };
 
   return (
     <>
@@ -62,7 +40,7 @@ function App() {
           },
         ]}
       >
-        <Nav page={page} handlePageChange={handlePageChange} />
+        <Nav />
         <Outlet />
       </Router>
     </>

@@ -1,32 +1,39 @@
-import React from 'react';
-import styles from "./Nav.module.css"
-import Logo from "../UI/Images/Logo.png"
+import React from "react";
+import styles from "./Nav.module.css";
+import Logo from "../UI/Images/Logo.png";
+import { Link } from "@tanstack/react-location";
 
 const Nav = (props) => {
-    return(
-        <div className={`${styles['nav-container']}`}>
-            <img onClick={()=> props.handlePageChange('Home')} className={styles['logo']} src={Logo} alt=""/>
+  return (
+    <div className={`${styles["nav-container"]}`}>
+      <Link to="/">
+        <img className={styles["logo"]} src={Logo} alt="" />
+      </Link>
 
-        <ul className={'flex fs-400 letter-spacing-2'}>
+      <div className={"flex fs-400 letter-spacing-2"}>
+        <Link
+          to="/about"
+          className={`${styles["nav-item"]} gradient-yellow-pink`}
+        >
+          About
+        </Link>
 
-            <li onClick={()=>props.handlePageChange('About Me')}
-                className={`${styles['nav-item']} gradient-yellow-pink`}>
-                About Me</li>
+        <Link
+          to="/portfolio"
+          className={`${styles["nav-item"]} gradient-pink-dark-blue`}
+        >
+          Portfolio
+        </Link>
 
-            <li onClick={()=>props.handlePageChange('Portfolio')}
-                className={`${styles['nav-item']} gradient-pink-dark-blue`}>
-                Portfolio</li>
-
-            <li onClick={()=>props.handlePageChange('Shopping')}
-                className={`${styles['nav-item']} gradient-green-light-blue`}>
-            Shopping
-            </li>
-
-
-
-        </ul>
-        </div>
-    )
-}
+        <Link
+          to="shop"
+          className={`${styles["nav-item"]} gradient-green-light-blue`}
+        >
+          Shop
+        </Link>
+      </div>
+    </div>
+  );
+};
 
 export default Nav;
