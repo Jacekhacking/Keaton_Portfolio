@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-keatonportfolio-dev-173620-authRole",
+      "UnauthRoleArn": "arn:aws:iam::416705624742:role/amplify-keatonportfolio-dev-173620-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::416705624742:role/amplify-keatonportfolio-dev-173620-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-keatonportfolio-dev-173620-deployment",
+      "UnauthRoleName": "amplify-keatonportfolio-dev-173620-unauthRole",
+      "StackName": "amplify-keatonportfolio-dev-173620",
+      "StackId": "arn:aws:cloudformation:us-west-1:416705624742:stack/amplify-keatonportfolio-dev-173620/6fcd3980-023b-11ed-8343-061f95d3c58f",
+      "AmplifyAppId": "d6o7jzv7zw6rq"
+    }
+  }
+}
